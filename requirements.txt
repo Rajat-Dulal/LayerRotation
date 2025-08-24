@@ -5,3 +5,5 @@ scikit-learn
 seaborn
 pandas
 ipykernel
+tensorflow==1.4.0 
+h5py
