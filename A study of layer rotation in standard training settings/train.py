@@ -57,7 +57,7 @@ monitor_file = 'monitor_explanatory_adaptive.txt'
 
 
 
-tasks = ['C100-resnet']#['C10-CNN1','C100-resnet','tiny-CNN','C10-CNN2','C100-WRN']
+tasks = ['C100-resnet', 'C10-CNN1']#['C10-CNN1','C100-resnet','tiny-CNN','C10-CNN2','C100-WRN']
 
 for task in tasks:
     x_train, y_train, x_test, y_test, get_model = import_task(task)
