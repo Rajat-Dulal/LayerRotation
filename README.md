@@ -53,4 +53,28 @@ cd 'A study of layer rotation in standard training settings'
 python train.py
 
 
+Install tmux if it's not already installed:
 
+sudo apt update && sudo apt install tmux
+
+
+Then:
+
+tmux
+
+
+Start your training:
+
+python train.py
+
+
+Then detach from the session with:
+
+Ctrl + B, then press D
+
+
+This keeps your session alive even if you close the browser.
+
+To reconnect later:
+
+tmux attach
