@@ -20,3 +20,37 @@ experiment_utils.py contains utilities such as training curves visualization, on
 
 ### Libraries configuration
 Code was run with tensorflow-gpu 1.4.0 and keras 2.1.2
+
+### Steps
+1. Download the latest Miniconda installer (Linux 64-bit)
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+2. Run the installer
+bash Miniconda3-latest-Linux-x86_64.sh
+At the end, it will ask:
+
+Do you wish the installer to initialize Miniconda3?
+
+Type yes.
+
+3. Refresh the shell to activate conda
+source ~/.bashrc
+
+Create a new environment (use Python version you need)
+conda create --name myenv python=3.6
+
+Activate it
+conda activate myenv
+
+pip install -r requirements.txt
+
+git clone repo_link
+
+cd LayerRotation
+
+cd 'A study of layer rotation in standard training settings'
+
+python train.py
+
+
+
