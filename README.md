@@ -78,3 +78,22 @@ This keeps your session alive even if you close the browser.
 To reconnect later:
 
 tmux attach
+
+
+
+
+
+To download the trained model with all other files:
+Install gcloud SDK from:
+https://cloud.google.com/sdk/docs/install
+
+Then configure the setup.
+
+gcloud auth login
+gcloud config set project your-project-id
+
+
+Finally use it:
+gloud compute scp --recurse username@vm-name:/path/to/model /local/path --xone=zone-name
+
+gcloud compute scp --recurse s225207935@layer-rotation-modeling:/home/s225207935/LayerRotation "C:\Users\rjtdu\Downloads" --zone=us-central1-f
